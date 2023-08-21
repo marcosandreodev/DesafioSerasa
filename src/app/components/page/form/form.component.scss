@@ -1,0 +1,168 @@
+@use 'src/assets/scss/colors.scss' as *;
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    margin: 0;
+}
+
+body{
+    background: $magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    padding: 4%;
+}
+
+.logo{
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.container{
+    background-color: $light-solid;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: $light-solid;
+    text-align: center;
+}
+
+.form {
+    padding: 0px 20px 20px 20px;
+}
+
+.form-section {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.form-section label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    border: 2p;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-section i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-section small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: $magenta;
+    border: 7px solid $magenta;
+    color: $light-solid;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-section input{
+    border-color: $dark-medium;
+}
+
+ngb-rating{
+    color: $magenta;
+    font-size: 50px;
+}
+
+#star-section{
+    padding: 0;
+}
+
+@media (min-width:250px)  { 
+    .container{
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .form button{
+        background-color: $magenta;
+        border: 7px solid $magenta;
+        color: $light-solid;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .form-section input {
+        width: 100%;
+        padding: 4px;
+    }
+
+    ngb-rating{
+        color: $magenta;
+        font-size: 30px;
+    }
+}
+
+@media (min-width:320px)  { 
+    .container{
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .form button{
+        background-color: $magenta;
+        border: 7px solid $magenta;
+        color: $light-solid;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .form-section input {
+        width: 100%;
+        padding: 4px;
+    }
+
+    ngb-rating{
+        color: $magenta;
+        font-size: 40px;
+    }
+}
+
+@media (min-width:1025px) { 
+    @media (min-width:320px)  { 
+        .container{
+            width: 350px;
+            max-width: 100%;
+        }
+    }
+}
+@media (min-width:1281px) { 
+    .container{
+        width: 500px;
+        max-width: 100%;
+    }
+
+    ngb-rating{
+        color: $magenta;
+        font-size: 70px;
+    }
+}

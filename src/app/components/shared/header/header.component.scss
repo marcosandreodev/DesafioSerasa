@@ -1,0 +1,46 @@
+@use 'src/assets/scss/colors.scss' as *;
+
+.logo{
+    width: 50px;
+    margin: auto;
+    display: block;
+}
+
+header{
+    background-color: $light-solid;
+
+}
+
+
+// responsividade
+
+@media (min-width:250px)  { 
+    .logo{
+        width: 25px;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (min-width:320px)  { 
+    .logo{
+        width: 30px;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (min-width:1025px) { 
+    .logo{
+        width: 40px;
+        margin: auto;
+        display: block;
+    }
+}
+@media (min-width:1281px) { 
+    .logo{
+        width: 50px;
+        margin: auto;
+        display: block;
+    }
+}

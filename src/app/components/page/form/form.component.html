@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <div class="form-header">
+            <img class= "logo" src = "/assets/img/serasa-logo.svg">
+            <h4 class = "HeadingS">Conte o quanto você está satisfeito com nossos serviços </h4>
+        </div>
+        <form id="form" class="form">
+            <div class="form-section" id="star-section">
+                <label for="name">Marque de 1 à 5 estrelas</label>
+                <ngb-rating [max]="5"></ngb-rating>
+            </div> 
+            <div class="form-section">
+                <label for="name">Seu Nome</label>
+                <input type="text" id="name">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-solid fa-circle-check"></i>
+                <small>Erro</small>
+            </div> 
+            <div class="form-section">
+                <label for="comment">Comentário (opcional)</label>
+                <input type="text" id="comment">
+                <small>Erro</small>
+            </div> 
+            <button type="submit" routerLink="/finish">Enviar avaliação</button>
+        </form>
+    </div>
+</body>
+

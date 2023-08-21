@@ -1,0 +1,111 @@
+@use 'src/assets/scss/colors.scss' as *;
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    margin: 0;
+}
+
+i{
+    color: $green;
+    padding: 20px;
+    font-size: 100px;
+}
+
+
+body{
+    background: $magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    padding: 4%;
+}
+
+.logo{
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.container{
+    background-color: $light-solid;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: $light-solid;
+    text-align: center;
+}
+
+.form {
+    padding: 0px 20px 20px 20px;
+}
+
+.form-section {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.form-section label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    border: 2p;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width:250px)  { 
+    .container{
+        width: 250px;
+        max-width: 100%;
+    }
+
+    i{
+        font-size: 50px;
+    }
+}
+
+@media (min-width:320px)  { 
+    .container{
+        width: 300px;
+        max-width: 100%;
+    }
+    i{
+        font-size: 75px;
+    }
+    
+}
+
+@media (min-width:1025px) { 
+    @media (min-width:320px)  { 
+        .container{
+            width: 350px;
+            max-width: 100%;
+        }
+    }
+    i{
+        font-size: 100px;
+    }
+}
+@media (min-width:1281px) { 
+    .container{
+        width: 500px;
+        max-width: 100%;
+    }
+}

@@ -1,27 +1,36 @@
 # DesafioSerasa
+    Este projeto foi criado para resolver 3 exercíos propostos pelo time de autenticação 
+# 1 - Doc-tipografia e cores
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+    Na pasta assets, foram criados 2 arquivos scss, um destinado a cor(colors.scss) e outra a tipografia(typography.scss).
 
-## Development server
+    O arquivo das cores deve ser usado em qualquer scss que você queria utilizar cores. O processo é muito simples, basta importar no scss do seu componente novo, entrar no colors.scss e verificar qual atribuição foi dada a cor que deseja usar e por fim só escrever essa atribuição como valor da cor no seu scss, caso você queria uma diferente, basta criar no mesmo padrão.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    O arquivo da Tipografia foi importado na style.css, então por padrão o projeto inteiro tem a fonte Roboto.
+    Sobre os diferentes tamanhos de fonte foi organizado da seguinte forma:
+        Foram criadas classes de estilização chamadas:
+            Diplay, HeadingL, HeadingM, HeadingS, HeadingXS, Subheading, BodyM.
+    
+    No arquivo foi definido uma variável para escolher uma cor padrão importada da classe color, se quiser mudar esta cor padrão de texto, só será necessário mudar o $colorFont.
 
-## Code scaffolding
+# 3 - Arquitetura
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Acredito que a forma ideal da arquitetura seria para o projeto frontend, utilizar o Angular para construção do app web. Utilizando o padrão de micro frontend, fazendo assim alterações serem menos impactantes no sistema como um todo. 
 
-## Build
+    Bootstrap é uma boa opção para agilizarmos alguns componentes genéricos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    Como usaremos o Angular. O time deverá estudar mais sobre typescript, pois embora tenha semelhanças com o Js, ela tem suas característica próprias.
 
-## Running unit tests
+    Utilizaria o Docker para mantermos nossos ambientes da aplicação mais estáveis.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Git é essencial para um time com mais de 20 devs frontend.
 
-## Running end-to-end tests
+    Jasmine e Karma para testes do desenvolvedor. E os QAs fariam testes automatizados com o Cypress.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    Ao final do desenvolvimento de uma task, o Dev deve fazer uma documentação de como utilizar o componente, para que caso no futuro alguém tenha que modificar o código, tenha menos tempo perdido tentando ler o código.
+    
+    Clean Code, Nada de console logs jogados ou comentários desnecessários. Deixe tudo limpo e simples de ler.
 
-## Further help
+    Faça codigos "burros", todos devem entender o que você escreveu sem dificuldade, sem metódos gigantes ou algo do tipo, mantenha simples. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# O arquivo Delivery está dentro da pasta anexo enviado!!
