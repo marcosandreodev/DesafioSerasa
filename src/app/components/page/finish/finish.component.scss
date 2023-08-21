@@ -6,12 +6,20 @@
     margin: 0;
 }
 
+i{
+    color: $green;
+    padding: 20px;
+    font-size: 100px;
+}
+
+
 body{
     background: $magenta;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 h4{
     padding: 4%;
 }
@@ -62,63 +70,14 @@ h4{
     padding: 10px;
 }
 
-.form-section i {
-    position: absolute;
-    top: 45px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.form-section small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-}
-
-.form button{
-    background-color: $magenta;
-    border: 7px solid $magenta;
-    color: $light-solid;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.form-section input{
-    border-color: $dark-medium;
-}
-
-ngb-rating{
-    color: $magenta;
-    font-size: 50px;
-}
-
-#star-section{
-    padding: 0;
-}
-
 @media (min-width:250px)  { 
     .container{
         width: 250px;
         max-width: 100%;
     }
 
-    .form button{
-        background-color: $magenta;
-        border: 7px solid $magenta;
-        color: $light-solid;
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .form-section input {
-        width: 100%;
-        padding: 4px;
-    }
-
-    ngb-rating{
-        color: $magenta;
-        font-size: 30px;
+    i{
+        font-size: 50px;
     }
 }
 
@@ -127,24 +86,10 @@ ngb-rating{
         width: 300px;
         max-width: 100%;
     }
-
-    .form button{
-        background-color: $magenta;
-        border: 7px solid $magenta;
-        color: $light-solid;
-        width: 100%;
-        border-radius: 10px;
+    i{
+        font-size: 75px;
     }
-
-    .form-section input {
-        width: 100%;
-        padding: 4px;
-    }
-
-    ngb-rating{
-        color: $magenta;
-        font-size: 40px;
-    }
+    
 }
 
 @media (min-width:1025px) { 
@@ -154,15 +99,13 @@ ngb-rating{
             max-width: 100%;
         }
     }
+    i{
+        font-size: 100px;
+    }
 }
 @media (min-width:1281px) { 
     .container{
         width: 500px;
         max-width: 100%;
-    }
-
-    ngb-rating{
-        color: $magenta;
-        font-size: 70px;
     }
 }

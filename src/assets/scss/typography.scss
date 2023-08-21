@@ -5,48 +5,90 @@
 $bodyFont: 'Roboto', sans-serif;
 $colorFont: $dark-high;
 
-.Display, 
-h1{
+
+
+@media (min-width:481px)  { 
+  .Display{
+    font-size: 2.5rem;  
+    font-weight: bold;
+    letter-spacing: -1.2;
+    color: $colorFont;
+  }
+.HeadingL{
+      font-size: 2rem;  
+      font-weight: bold;
+      letter-spacing: -1;
+      color: $colorFont;
+  }
+.HeadingM{
+      font-size: 1.5rem;  
+      font-weight: bold;
+      letter-spacing: -0.8;
+      color: $colorFont;
+  }
+.HeadingS{
+      font-size: 1.25rem;  
+      font-weight: bold;
+      letter-spacing: -0.6;
+      color: $colorFont;
+  }
+.HeadingXS{
+      font-size: 1.125rem;
+      font-weight: bold; 
+      color: $colorFont;
+  }
+.Subheading{
+      font-size: 1rem;  
+      font-weight: bold;
+      color: $colorFont;
+  }
+.BodyM{
+      font-size: 1rem;
+      color: $colorFont;
+  }
+
+  
+}
+
+@media (min-width:1025px) {
+  .Display{
     font-size: 3rem;  
     font-weight: bold;
     letter-spacing: -1.2;
     color: $colorFont;
   }
-.HeadingL, 
-h2{
+.HeadingL{
       font-size: 2.5rem;  
       font-weight: bold;
       letter-spacing: -1;
       color: $colorFont;
   }
-.HeadingM,
-h3{
+.HeadingM{
       font-size: 2rem;  
       font-weight: bold;
       letter-spacing: -0.8;
       color: $colorFont;
   }
-.HeadingS,
-h4{
-      font-size: 1,5rem;  
+.HeadingS{
+      font-size: 1.5rem;  
       font-weight: bold;
       letter-spacing: -0.6;
       color: $colorFont;
   }
-.HeadingXS,
-h5{
+.HeadingXS{
       font-size: 1.25rem;
       font-weight: bold; 
       color: $colorFont;
   }
-.Subheading,
-h6{
+.Subheading{
       font-size: 1rem;  
       font-weight: bold;
       color: $colorFont;
   }
-.BodyM,
-label{
+.BodyM{
       font-size: 1rem;
       color: $colorFont;
   }
+
+}
+
