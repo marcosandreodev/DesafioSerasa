@@ -31,5 +31,5 @@
     
     Clean Code, Nada de console logs jogados ou comentários desnecessários. Deixe tudo limpo e simples de ler.
 
-    Faça codigos "burros", todos devem entender o que você escreveu sem dificuldade, sem metódos gigantes ou algo do tipo, mantenha simples 
+    Faça codigos "burros", todos devem entender o que você escreveu sem dificuldade, sem metódos gigantes ou algo do tipo, mantenha simples. 
 
