@@ -1,0 +1,10 @@
+@use 'src/assets/scss/colors.scss' as *;
+
+.logo{
+    width: 3%;
+    margin: auto;
+    display: block;
+}
+header{
+    background-color: $light-solid;
+}

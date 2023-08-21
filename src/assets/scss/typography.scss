@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$roboto: 'Roboto', sans-serif;
+$bodyFont: 'Roboto', sans-serif;
 
-.Display{
+.Display, 
+h1{
     font-size: 3rem;  
-    font-family: $roboto;
     font-weight: bold;
     letter-spacing: -1.2;
   }
-  .HeadingL{
+.HeadingL, 
+h2{
       font-size: 2.5rem;  
-      font-family: $roboto;
       font-weight: bold;
       letter-spacing: -1;
   }
-  .HeadingM{
+.HeadingM,
+h3{
       font-size: 2rem;  
-      font-family: $roboto;
       font-weight: bold;
       letter-spacing: -0.8;
   }
-  .HeadingS{
+.HeadingS,
+h4{
       font-size: 1,5rem;  
-      font-family: $roboto;
       font-weight: bold;
       letter-spacing: -0.6;
   }
-  .HeadingXS{
+.HeadingXS,
+h5{
       font-size: 1.25rem;
-      font-family: $roboto; 
       font-weight: bold; 
   }
-  .Subheading{
+.Subheading,
+h6{
       font-size: 1rem;  
-      font-family: $roboto;
       font-weight: bold;
     
   }
-  .BodyM{
+.BodyM,
+label{
       font-size: 1rem;
-      font-family: $roboto;
   }

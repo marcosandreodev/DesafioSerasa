@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'src/assets/scss/typography.scss' as *;
+@use 'src/assets/scss/colors.scss' as *;
+
+html,
+body {
+    height: 100%;
+    background-color: $body-background;
+}
+
+body{
+    margin: 0;
+    font-family: $bodyFont;
+}
+
+.white-text{
+    color: $light-solid;
+}
